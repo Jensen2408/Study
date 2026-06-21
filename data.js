@@ -9,10 +9,12 @@ const SUBJECTS = {
         title: "Introduction to Biology",
         part: "Part 1 · Foundations of Life",
         summary: [
-          "<b>Biology</b> is the scientific study of living organisms and their interactions with each other and the environment.",
-          "All living things share key <b>characteristics of life</b>: organization, metabolism, growth, response to stimuli, reproduction, and homeostasis.",
-          "Life is organized into a <b>hierarchy</b> — atoms → molecules → cells → tissues → organs → organ systems → organism.",
-          "The <b>scientific method</b> (observation, hypothesis, experiment, analysis, conclusion) is how biologists test ideas about the living world."
+          "<b>Biology</b> is the scientific study of living organisms — including how they are structured, how they function, how they grow and reproduce, and how they interact with each other and their environment.",
+          "All living things share six key <b>characteristics of life</b>: cellular organization, metabolism (chemical reactions), growth and development, response to stimuli, reproduction, and homeostasis (maintaining a stable internal environment).",
+          "Life is organized into a <b>hierarchy of complexity</b>: atoms → molecules → organelles → cells → tissues → organs → organ systems → organism → population → community → ecosystem → biosphere.",
+          "The <b>scientific method</b> is the foundation of all biology: it involves making an observation, forming a hypothesis (testable prediction), designing and running an experiment, collecting and analyzing data, and drawing a conclusion.",
+          "A <b>hypothesis</b> must be falsifiable — it can be proven wrong. If repeated experiments support it, it may become a theory (a well-tested explanation), and eventually a scientific law (a description of what always happens).",
+          "Biology is divided into many sub-disciplines including <b>cell biology, genetics, ecology, anatomy, physiology, and microbiology</b>, all united by the idea that life shares common chemical and cellular building blocks."
         ],
         flashcards: [
           {front:"Biology", back:"The scientific study of life and living organisms."},
@@ -55,10 +57,12 @@ const SUBJECTS = {
         title: "The Chemistry of Life",
         part: "Part 1 · Foundations of Life",
         summary: [
-          "Living things are made of <b>matter</b> built from atoms; the main elements of life are carbon, hydrogen, oxygen and nitrogen (CHON).",
-          "<b>Water</b> is essential — its polarity makes it a great solvent and gives it cohesion, high heat capacity, and the ability to support chemical reactions.",
-          "The four major <b>biological macromolecules</b> are carbohydrates, lipids, proteins, and nucleic acids.",
-          "<b>pH</b> measures how acidic or basic a solution is; cells keep pH near neutral using buffers."
+          "Living things are made of <b>matter</b> — anything with mass and volume. The most important elements for life are carbon (C), hydrogen (H), oxygen (O), and nitrogen (N), remembered as <b>CHON</b>, which make up about 96% of the human body.",
+          "<b>Water</b> is the most essential molecule for life. Its polarity (unequal charge distribution) makes it an excellent solvent, gives it cohesion (water sticking to water), adhesion, a high heat capacity, and the ability to act as a medium for all biochemical reactions.",
+          "The four major <b>biological macromolecules</b> (large molecules) are: <b>carbohydrates</b> (energy and structure), <b>lipids</b> (energy storage and membranes), <b>proteins</b> (do most cellular work), and <b>nucleic acids</b> (store genetic information).",
+          "<b>Carbohydrates</b> are made of C, H, O in a 1:2:1 ratio. Simple sugars (monosaccharides like glucose) are quick energy; complex carbs (polysaccharides like starch and glycogen) are storage forms.",
+          "<b>Proteins</b> are made of chains of amino acids. They function as enzymes, structural molecules, hormones, and transport proteins. Their shape determines their function — shape is easily disrupted by heat or pH.",
+          "<b>pH</b> measures hydrogen ion concentration on a scale of 0–14. A pH below 7 is acidic, above 7 is basic, and 7 is neutral. Cells use <b>buffers</b> (chemicals that resist pH change) to maintain the near-neutral environment needed for enzymes and proteins to work properly."
         ],
         flashcards: [
           {front:"The 4 main elements of life", back:"Carbon, Hydrogen, Oxygen, Nitrogen (CHON)."},
@@ -102,10 +106,12 @@ const SUBJECTS = {
         title: "Cell Structure & Function",
         part: "Part 2 · The Cell",
         summary: [
-          "The <b>cell</b> is the basic unit of life; the <b>cell theory</b> states all living things are made of cells and all cells come from pre-existing cells.",
-          "<b>Prokaryotic</b> cells (bacteria) lack a nucleus; <b>eukaryotic</b> cells (plants, animals) have a nucleus and membrane-bound organelles.",
-          "Key organelles: <b>nucleus</b> (control center), <b>mitochondria</b> (energy), <b>ribosomes</b> (protein synthesis), <b>ER</b> and <b>Golgi</b> (processing/transport).",
-          "The <b>cell membrane</b> is a phospholipid bilayer that controls what enters and leaves the cell."
+          "The <b>cell theory</b> has three principles: all living things are made of one or more cells, the cell is the basic structural and functional unit of life, and all cells arise from pre-existing cells (no spontaneous generation).",
+          "<b>Prokaryotic cells</b> (bacteria and archaea) are simpler — no membrane-bound nucleus, no organelles, smaller in size. <b>Eukaryotic cells</b> (plants, animals, fungi, protists) have a true nucleus and specialized organelles.",
+          "The <b>nucleus</b> is the control center — it houses DNA and directs all cell activities. Inside the nucleus is the <b>nucleolus</b>, which makes ribosomes.",
+          "<b>Mitochondria</b> produce ATP through cellular respiration (the cell's powerhouse). <b>Ribosomes</b> build proteins. The <b>rough ER</b> processes proteins; the <b>smooth ER</b> makes lipids. The <b>Golgi apparatus</b> packages and ships molecules to their destinations.",
+          "Plant cells have unique structures not found in animal cells: a rigid <b>cell wall</b> (made of cellulose) for extra support, <b>chloroplasts</b> for photosynthesis, and a large central <b>vacuole</b> for storage and maintaining pressure.",
+          "The <b>cell membrane</b> is a fluid phospholipid bilayer with embedded proteins. It is <b>selectively permeable</b> — it controls which substances can enter and exit, maintaining the internal environment of the cell."
         ],
         flashcards: [
           {front:"Cell theory", back:"All living things are made of cells; cells are the basic unit of life; all cells come from existing cells."},
@@ -149,10 +155,12 @@ const SUBJECTS = {
         title: "Cell Transport",
         part: "Part 2 · The Cell",
         summary: [
-          "<b>Passive transport</b> needs no energy and moves substances down their concentration gradient (diffusion, osmosis, facilitated diffusion).",
-          "<b>Active transport</b> requires ATP to move substances against their gradient (e.g., the sodium-potassium pump).",
-          "<b>Osmosis</b> is the diffusion of water across a membrane; cells respond to hypertonic, hypotonic and isotonic solutions.",
-          "Large particles move by <b>endocytosis</b> (in) and <b>exocytosis</b> (out)."
+          "<b>Passive transport</b> requires no cellular energy (ATP). Substances move down their concentration gradient — from an area of high concentration to low — until equilibrium is reached. Types include simple diffusion, facilitated diffusion, and osmosis.",
+          "<b>Simple diffusion</b> is the movement of small nonpolar molecules (like O₂ and CO₂) directly through the cell membrane. <b>Facilitated diffusion</b> moves larger or polar molecules through specific protein channels — still no energy required.",
+          "<b>Osmosis</b> is the diffusion of water across a selectively permeable membrane. Water moves toward the side with more solute (higher concentration). In a <b>hypotonic</b> solution (low solute outside), water enters the cell and it swells. In a <b>hypertonic</b> solution (high solute outside), water leaves and the cell shrinks. In an <b>isotonic</b> solution, no net movement occurs.",
+          "<b>Active transport</b> uses ATP to move substances <i>against</i> their concentration gradient (from low to high). The <b>sodium-potassium pump</b> is a key example — it pumps 3 Na⁺ out and 2 K⁺ in to maintain cell voltage and fluid balance.",
+          "<b>Endocytosis</b> is bulk transport of large particles into the cell — the membrane folds inward to engulf the substance. <b>Exocytosis</b> is the reverse — vesicles fuse with the membrane to release substances (e.g., neurotransmitters, hormones) out of the cell.",
+          "Understanding cell transport is critical in nursing: IV fluids must be <b>isotonic</b> to blood to prevent cells from swelling or shrinking, and many drugs work by blocking or mimicking transport proteins."
         ],
         flashcards: [
           {front:"Diffusion", back:"Movement of particles from high to low concentration; no energy needed."},
@@ -196,10 +204,12 @@ const SUBJECTS = {
         title: "Cellular Energy: Respiration & Photosynthesis",
         part: "Part 2 · The Cell",
         summary: [
-          "<b>ATP</b> is the energy currency of cells, releasing energy when its phosphate bond breaks.",
-          "<b>Cellular respiration</b> breaks down glucose with oxygen to make ATP: glucose + O₂ → CO₂ + H₂O + ATP.",
-          "<b>Photosynthesis</b> (in plants) uses sunlight, CO₂ and water to make glucose and oxygen.",
-          "Respiration and photosynthesis are essentially <b>opposite, complementary</b> processes that cycle carbon and oxygen."
+          "<b>ATP (adenosine triphosphate)</b> is the universal energy currency of all cells. Energy is released when the bond between the second and third phosphate is broken. ATP is continuously regenerated from ADP + phosphate using energy from food or sunlight.",
+          "<b>Cellular respiration</b> is the process cells use to extract energy from glucose. The overall equation is: <b>glucose + oxygen → carbon dioxide + water + ATP</b>. It occurs in three stages: glycolysis (cytoplasm), the Krebs cycle (mitochondria matrix), and the electron transport chain (inner mitochondrial membrane).",
+          "<b>Aerobic respiration</b> (with oxygen) produces up to 36–38 ATP per glucose — very efficient. <b>Anaerobic respiration</b> (without oxygen) only yields 2 ATP and results in fermentation. In muscle cells, fermentation produces <b>lactic acid</b>; in yeast, it produces <b>alcohol and CO₂</b>.",
+          "<b>Photosynthesis</b> occurs in the chloroplasts of plant and algae cells. It uses sunlight energy, CO₂, and water to produce glucose and oxygen: <b>6CO₂ + 6H₂O + light energy → C₆H₁₂O₆ + 6O₂</b>. It has two stages: the light reactions (in the thylakoids) and the Calvin cycle (in the stroma).",
+          "Respiration and photosynthesis are <b>complementary processes</b> — the products of one are the reactants of the other. Together they cycle carbon, oxygen, and energy through ecosystems.",
+          "In the human body, cells that need large amounts of energy (like muscle and brain cells) have large numbers of <b>mitochondria</b>. During intense exercise, the body shifts to anaerobic metabolism, causing lactic acid buildup and the 'burning' sensation in muscles."
         ],
         flashcards: [
           {front:"ATP", back:"Adenosine triphosphate — the cell's main energy-carrying molecule."},
@@ -242,10 +252,12 @@ const SUBJECTS = {
         title: "Cell Division & the Cell Cycle",
         part: "Part 3 · Genetics & Reproduction",
         summary: [
-          "The <b>cell cycle</b> includes interphase (G1, S, G2 — growth and DNA copying) and the mitotic phase (division).",
-          "<b>Mitosis</b> produces two genetically identical diploid cells for growth and repair (PMAT: prophase, metaphase, anaphase, telophase).",
-          "<b>Meiosis</b> produces four genetically unique haploid gametes (sex cells) for reproduction.",
-          "Errors in the cell cycle can lead to uncontrolled division — <b>cancer</b>."
+          "The <b>cell cycle</b> is the ordered sequence of events a cell goes through to grow and divide. It has two main phases: <b>interphase</b> (the longest phase — G1 growth, S DNA replication, G2 preparation) and the <b>mitotic phase</b> (division).",
+          "<b>Mitosis</b> produces two genetically identical daughter cells with the full diploid (2n) chromosome number. It is used for growth, tissue repair, and asexual reproduction. The stages are remembered as <b>PMAT</b>: Prophase (chromosomes condense), Metaphase (line up in middle), Anaphase (pulled to poles), Telophase (two new nuclei form), followed by cytokinesis (cytoplasm splits).",
+          "<b>Meiosis</b> is cell division for sexual reproduction. It consists of two rounds of division (Meiosis I and II) and produces four genetically unique haploid (n) cells — the gametes (sperm and egg). Genetic variation is created through <b>crossing over</b> during Meiosis I.",
+          "Gametes must be <b>haploid</b> so that when an egg and sperm fuse during fertilization, the resulting zygote has the correct diploid number of chromosomes (e.g., humans: 23 + 23 = 46).",
+          "<b>Cell cycle checkpoints</b> are quality-control points that ensure the cell is ready to proceed. If DNA is damaged or not properly replicated, the cycle pauses. Proteins called <b>tumor suppressors</b> (e.g., p53) help enforce these checkpoints.",
+          "When checkpoints fail — due to mutations — cells can divide uncontrollably. This leads to <b>cancer</b>: a mass of abnormal cells (tumor) that may invade surrounding tissues or spread through the body (metastasis)."
         ],
         flashcards: [
           {front:"Interphase", back:"The longest phase — cell grows and copies its DNA (G1, S, G2)."},
@@ -288,10 +300,12 @@ const SUBJECTS = {
         title: "DNA, RNA & Protein Synthesis",
         part: "Part 3 · Genetics & Reproduction",
         summary: [
-          "<b>DNA</b> is a double helix of nucleotides (A-T, G-C base pairing) that stores genetic instructions.",
-          "<b>Transcription</b> copies a gene's DNA into messenger RNA (mRNA) in the nucleus.",
-          "<b>Translation</b> at the ribosome reads mRNA codons (3 bases) to build a protein from amino acids.",
-          "The flow of genetic information is the <b>central dogma</b>: DNA → RNA → Protein."
+          "<b>DNA (deoxyribonucleic acid)</b> is a double-stranded helix made of nucleotides. Each nucleotide has a sugar (deoxyribose), a phosphate group, and one of four nitrogenous bases: <b>Adenine (A), Thymine (T), Guanine (G), Cytosine (C)</b>. A always pairs with T, and G always pairs with C (complementary base pairing).",
+          "The <b>central dogma</b> describes the flow of genetic information: <b>DNA → RNA → Protein</b>. DNA stores the instructions; RNA carries them; proteins carry out the work.",
+          "<b>Transcription</b> occurs in the nucleus. An enzyme called RNA polymerase 'reads' a gene on the DNA and builds a complementary strand of <b>messenger RNA (mRNA)</b>. In RNA, uracil (U) replaces thymine (T). The mRNA then travels out of the nucleus to the ribosome.",
+          "<b>Translation</b> occurs at the ribosome. The ribosome reads the mRNA three bases at a time — each trio is called a <b>codon</b>. Each codon codes for one amino acid. Transfer RNA (tRNA) brings the correct amino acid to the ribosome. The amino acids are linked into a chain — a protein.",
+          "There are 64 possible codons for only 20 amino acids, so the genetic code is <b>redundant</b> (multiple codons can code for the same amino acid). The start codon (AUG, methionine) begins translation; stop codons (UAA, UAG, UGA) end it.",
+          "<b>Mutations</b> are changes in the DNA sequence. A point mutation changes one base; a frameshift mutation adds or deletes bases, shifting the entire reading frame. Some mutations are harmless, some are beneficial, and others cause genetic diseases or cancer."
         ],
         flashcards: [
           {front:"DNA base pairs", back:"Adenine–Thymine (A-T) and Guanine–Cytosine (G-C)."},
@@ -334,10 +348,12 @@ const SUBJECTS = {
         title: "Genetics & Heredity",
         part: "Part 3 · Genetics & Reproduction",
         summary: [
-          "<b>Gregor Mendel</b> discovered the basic rules of inheritance using pea plants.",
-          "<b>Alleles</b> are versions of a gene; <b>dominant</b> alleles mask <b>recessive</b> ones.",
-          "<b>Genotype</b> is the genetic makeup; <b>phenotype</b> is the physical expression.",
-          "<b>Punnett squares</b> predict the probability of offspring traits."
+          "<b>Gregor Mendel</b>, the 'father of genetics,' discovered the basic principles of inheritance in the 1860s through careful experiments with pea plants. He tracked traits like seed color, shape, and plant height across generations.",
+          "Each organism has two copies of each gene (one from each parent), called <b>alleles</b>. Alleles can be <b>dominant</b> (expressed when present, shown as a capital letter, e.g., B) or <b>recessive</b> (only expressed when two copies are present, shown as lowercase, e.g., b).",
+          "<b>Genotype</b> is the actual genetic makeup of an organism (e.g., BB, Bb, or bb). <b>Phenotype</b> is the observable physical trait (e.g., brown eyes or blue eyes). Two organisms with different genotypes (BB and Bb) can have the same phenotype.",
+          "<b>Homozygous</b> means both alleles are the same (BB or bb). <b>Heterozygous</b> means the alleles are different (Bb). A heterozygous individual is called a carrier if the recessive allele causes a disease.",
+          "<b>Punnett squares</b> are grids used to predict the probability of offspring genotypes and phenotypes from a genetic cross. For example, a Bb × Bb cross gives a 3:1 dominant-to-recessive phenotype ratio.",
+          "Mendel's <b>Law of Segregation</b> says the two alleles for a trait separate during gamete formation. His <b>Law of Independent Assortment</b> says genes for different traits are inherited independently of one another (when on different chromosomes)."
         ],
         flashcards: [
           {front:"Allele", back:"A different version of a gene (e.g., for eye color)."},
@@ -380,10 +396,12 @@ const SUBJECTS = {
         title: "Evolution & Natural Selection",
         part: "Part 4 · Evolution & Ecology",
         summary: [
-          "<b>Evolution</b> is the change in heritable traits of a population over generations.",
-          "<b>Charles Darwin</b> proposed <b>natural selection</b>: individuals with favorable traits survive and reproduce more.",
-          "Evidence for evolution includes fossils, anatomy (homologous structures), embryology, and DNA.",
-          "<b>Adaptations</b> are inherited traits that increase survival and reproduction in an environment."
+          "<b>Evolution</b> is the change in the heritable traits of a population over generations. It is not about individuals changing — it's about populations shifting over time as certain traits become more or less common.",
+          "<b>Charles Darwin</b> proposed the theory of <b>natural selection</b> in 1859. His key observations: organisms produce more offspring than can survive, individuals vary in traits, some traits are heritable, and those with favorable traits survive and reproduce more, passing those traits on.",
+          "<b>Natural selection</b> is driven by the environment. Traits that improve survival and reproduction in a given environment are 'selected for'; harmful traits are 'selected against.' Over many generations, the population becomes better adapted.",
+          "<b>Adaptations</b> are inherited traits that improve an organism's fitness (survival and reproduction). Examples: camouflage coloring, venom, antibiotic resistance in bacteria, or the human opposable thumb.",
+          "Evidence for evolution comes from multiple sources: <b>fossils</b> show change over time, <b>comparative anatomy</b> reveals homologous structures (same origin, different function — e.g., human arm and whale flipper), <b>embryology</b> shows shared early development, and <b>DNA comparisons</b> show relatedness at the molecular level.",
+          "<b>Speciation</b> occurs when populations become reproductively isolated and diverge enough to form new species. Evolution does not have a goal or direction — it simply reflects which traits are most successful in the current environment."
         ],
         flashcards: [
           {front:"Evolution", back:"Change in the heritable traits of a population over time."},
@@ -426,10 +444,12 @@ const SUBJECTS = {
         title: "Ecology & Ecosystems",
         part: "Part 4 · Evolution & Ecology",
         summary: [
-          "<b>Ecology</b> studies interactions among organisms and their environment.",
-          "Energy flows through <b>food chains/webs</b> from producers → consumers → decomposers, losing energy at each level.",
-          "<b>Biogeochemical cycles</b> (carbon, nitrogen, water) recycle matter through ecosystems.",
-          "Populations interact through competition, predation, and symbiosis (mutualism, commensalism, parasitism)."
+          "<b>Ecology</b> is the scientific study of how organisms interact with each other and with their physical environment. It is organized into levels: individual → population → community → ecosystem → biosphere.",
+          "Energy flows in one direction through ecosystems via <b>food chains</b> and <b>food webs</b>. <b>Producers</b> (plants) capture sunlight energy. <b>Primary consumers</b> (herbivores) eat plants. <b>Secondary consumers</b> (carnivores) eat herbivores. <b>Decomposers</b> break down dead matter and recycle nutrients.",
+          "Only about <b>10% of energy</b> is transferred from one trophic level to the next — the rest is lost as heat. This is why food chains rarely have more than 4–5 levels, and why it takes many plants to support a few top predators.",
+          "<b>Biogeochemical cycles</b> recycle matter through the living and non-living parts of ecosystems. The <b>carbon cycle</b> (photosynthesis/respiration), <b>nitrogen cycle</b> (bacteria fix N₂ into usable forms), and <b>water cycle</b> (evaporation/condensation/precipitation) are the most important.",
+          "Species interact in many ways: <b>competition</b> (both harmed), <b>predation</b> (one benefits, one harmed), and <b>symbiosis</b> — mutualism (+/+, both benefit), commensalism (+/0, one benefits, other unaffected), and parasitism (+/−, one benefits, one harmed).",
+          "Human activity is disrupting ecosystems through <b>habitat destruction, pollution, invasive species, and climate change</b> — leading to declining biodiversity and disrupted nutrient cycles worldwide."
         ],
         flashcards: [
           {front:"Producer", back:"Organism that makes its own food via photosynthesis (e.g., plants)."},
@@ -472,10 +492,12 @@ const SUBJECTS = {
         title: "Introduction to Human Anatomy",
         part: "Part 5 · The Human Body",
         summary: [
-          "<b>Anatomy</b> is the study of body structures; <b>physiology</b> is the study of how they function.",
-          "The body is organized into <b>11 organ systems</b> that work together.",
-          "<b>Anatomical position</b> and directional terms (superior/inferior, anterior/posterior, medial/lateral) describe locations.",
-          "The body maintains <b>homeostasis</b> through feedback loops (mostly negative feedback)."
+          "<b>Anatomy</b> is the study of the structure of body parts and their relationships to one another. <b>Physiology</b> is the study of how those structures function. The two are inseparable — structure determines function.",
+          "The human body is organized into <b>11 organ systems</b>: integumentary, skeletal, muscular, nervous, endocrine, cardiovascular, lymphatic/immune, respiratory, digestive, urinary, and reproductive. Each system has specific organs that work together toward a common function.",
+          "<b>Anatomical position</b> is the standard reference: standing upright, facing forward, arms at the sides, palms facing forward. All directional terms are based on this position. Key pairs: <b>superior/inferior</b> (head/feet), <b>anterior/posterior</b> (front/back), <b>medial/lateral</b> (toward/away from midline), <b>proximal/distal</b> (closer/farther from the trunk).",
+          "The body is divided into <b>body cavities</b>: the dorsal cavity (cranial + spinal) and ventral cavity (thoracic + abdominopelvic). These protect vital organs. The abdominopelvic cavity is further divided into nine regions for clinical reference.",
+          "<b>Homeostasis</b> is the body's ability to maintain a stable internal environment despite external changes. Most homeostatic mechanisms work through <b>negative feedback</b>: a change is detected, a response reverses it, restoring balance (e.g., body temperature, blood sugar, blood pressure).",
+          "<b>Positive feedback</b> amplifies a change rather than reversing it — used in specific situations like childbirth (uterine contractions intensify) and blood clotting. If homeostasis fails, disease or death can result."
         ],
         flashcards: [
           {front:"Anatomy vs Physiology", back:"Anatomy = structure; Physiology = function."},
@@ -518,10 +540,12 @@ const SUBJECTS = {
         title: "The Skeletal System",
         part: "Part 5 · The Human Body",
         summary: [
-          "The skeleton has <b>206 bones</b> that provide support, protection, movement, blood cell production, and mineral storage.",
-          "It divides into the <b>axial skeleton</b> (skull, spine, ribs) and <b>appendicular skeleton</b> (limbs, girdles).",
-          "Bones are living tissue with compact and spongy bone; <b>red marrow</b> makes blood cells.",
-          "<b>Joints</b> connect bones; cartilage and ligaments stabilize and cushion them."
+          "The adult human skeleton has <b>206 bones</b> and performs five key functions: <b>support</b> (framework for the body), <b>protection</b> (skull protects brain, ribs protect heart/lungs), <b>movement</b> (levers for muscles), <b>blood cell production</b> (in red marrow), and <b>mineral storage</b> (calcium and phosphorus).",
+          "The skeleton is divided into two parts: the <b>axial skeleton</b> (80 bones — skull, vertebral column, sternum, ribs) which forms the central axis; and the <b>appendicular skeleton</b> (126 bones — limbs, shoulder girdle, pelvic girdle) which allows movement.",
+          "Bone is a living connective tissue. It has an outer layer of <b>compact bone</b> (dense, strong, forms the shaft) and an inner <b>spongy bone</b> (lightweight, porous, contains red marrow in certain bones). Bones are covered by a membrane called the <b>periosteum</b>.",
+          "<b>Red bone marrow</b> produces red blood cells, white blood cells, and platelets through a process called <b>hematopoiesis</b>. In adults, red marrow is mainly in the sternum, vertebrae, ribs, and pelvis. <b>Yellow marrow</b> (fat) fills the shafts of long bones.",
+          "<b>Cartilage</b> covers bone ends at joints, reducing friction. <b>Ligaments</b> are tough fibrous bands connecting bone to bone and stabilizing joints. Common joint types include hinge joints (elbow, knee) and ball-and-socket joints (shoulder, hip).",
+          "Bone is constantly being remodeled by <b>osteoblasts</b> (build bone) and <b>osteoclasts</b> (break bone down). This balance is regulated by hormones and mechanical stress. <b>Osteoporosis</b> occurs when bone loss outpaces bone formation, making bones fragile and prone to fracture."
         ],
         flashcards: [
           {front:"Number of bones in adult body", back:"206 bones."},
@@ -564,10 +588,12 @@ const SUBJECTS = {
         title: "The Muscular System",
         part: "Part 5 · The Human Body",
         summary: [
-          "There are three muscle types: <b>skeletal</b> (voluntary), <b>cardiac</b> (heart), and <b>smooth</b> (involuntary, organs).",
-          "Muscles contract when stimulated by nerves, using the <b>sliding filament</b> mechanism (actin & myosin).",
-          "Skeletal muscles work in <b>antagonistic pairs</b> (e.g., biceps and triceps).",
-          "Muscle contraction requires <b>ATP</b> and calcium."
+          "There are three types of muscle tissue: <b>skeletal muscle</b> (attached to bones, voluntary, striated), <b>cardiac muscle</b> (found only in the heart, involuntary, striated, self-stimulating), and <b>smooth muscle</b> (walls of hollow organs like the stomach and blood vessels, involuntary, non-striated).",
+          "Skeletal muscle contraction is explained by the <b>sliding filament theory</b>: thin filaments (actin) slide over thick filaments (myosin) when myosin heads attach and pull actin inward, shortening the sarcomere (the basic unit of muscle contraction).",
+          "Contraction is triggered by a nerve impulse that causes the release of <b>calcium ions</b> from the sarcoplasmic reticulum. Calcium binds to troponin, which exposes the actin binding sites for myosin. Each power stroke of the myosin head requires one <b>ATP</b> molecule.",
+          "Skeletal muscles work in <b>antagonistic pairs</b> — when one contracts, the other relaxes. For example, the <b>biceps</b> flexes the forearm while the <b>triceps</b> extends it. Muscles can only pull (contract), never push.",
+          "<b>Tendons</b> are strong connective tissue bands that attach muscle to bone, transmitting the pulling force. Tendons are different from ligaments (which connect bone to bone). Tendons are tough and have limited blood supply, making injuries slow to heal.",
+          "Muscle strength and endurance improve with exercise through <b>hypertrophy</b> (increase in muscle fiber size). Lack of use leads to <b>atrophy</b> (muscle wasting). Muscle fibers are classified as slow-twitch (endurance, fatigue-resistant) and fast-twitch (powerful, tire quickly)."
         ],
         flashcards: [
           {front:"Three muscle types", back:"Skeletal (voluntary), cardiac (heart), smooth (involuntary)."},
@@ -610,10 +636,12 @@ const SUBJECTS = {
         title: "The Nervous System",
         part: "Part 6 · Control & Coordination",
         summary: [
-          "The nervous system has the <b>central nervous system</b> (brain, spinal cord) and <b>peripheral nervous system</b> (nerves).",
-          "<b>Neurons</b> transmit electrical impulses; the gap between them is a <b>synapse</b> where neurotransmitters cross.",
-          "A <b>reflex arc</b> gives rapid, automatic responses without involving the brain.",
-          "The brain regions (cerebrum, cerebellum, brainstem) control thought, coordination, and vital functions."
+          "The nervous system is divided into the <b>central nervous system (CNS)</b> — brain and spinal cord — which processes information, and the <b>peripheral nervous system (PNS)</b> — all nerves outside the CNS — which carries signals to and from the body.",
+          "The PNS is further divided into the <b>somatic nervous system</b> (voluntary control of skeletal muscles) and the <b>autonomic nervous system</b> (involuntary control of organs). The autonomic system has <b>sympathetic</b> (fight-or-flight) and <b>parasympathetic</b> (rest-and-digest) divisions.",
+          "<b>Neurons</b> are specialized cells that transmit electrical signals. They have a cell body, <b>dendrites</b> (receive signals), and an <b>axon</b> (sends signals). An electrical signal traveling down a neuron is called an <b>action potential</b>.",
+          "At a <b>synapse</b>, the signal crosses the gap between neurons chemically. The axon terminal releases <b>neurotransmitters</b> (e.g., acetylcholine, dopamine, serotonin) which bind to receptors on the next neuron, either exciting or inhibiting it.",
+          "A <b>reflex arc</b> is a rapid, automatic response that bypasses conscious thought. It travels: receptor → sensory neuron → spinal cord interneuron → motor neuron → effector (muscle/gland). This is why you pull your hand from a hot object before you feel the pain.",
+          "The brain has three main regions: the <b>cerebrum</b> (largest — conscious thought, memory, senses, voluntary movement), <b>cerebellum</b> (balance and coordination), and <b>brainstem</b> (vital functions: breathing, heart rate, blood pressure)."
         ],
         flashcards: [
           {front:"Neuron", back:"A nerve cell that transmits electrical impulses."},
@@ -656,10 +684,12 @@ const SUBJECTS = {
         title: "The Cardiovascular System",
         part: "Part 7 · Transport & Defense",
         summary: [
-          "The heart pumps blood through a <b>double circuit</b>: pulmonary (to lungs) and systemic (to body).",
-          "Blood vessels: <b>arteries</b> carry blood away from the heart, <b>veins</b> return it, <b>capillaries</b> exchange materials.",
-          "Blood carries oxygen, nutrients, hormones, and wastes; components include red cells, white cells, platelets, and plasma.",
-          "The heart has four chambers: two atria (receive) and two ventricles (pump)."
+          "The cardiovascular system consists of the <b>heart</b>, <b>blood vessels</b>, and <b>blood</b>. Its functions include transporting oxygen, nutrients, hormones, and wastes; regulating temperature and pH; and protecting against disease.",
+          "The heart has four chambers: the <b>right atrium</b> (receives oxygen-poor blood from the body) → <b>right ventricle</b> (pumps to lungs) → <b>left atrium</b> (receives oxygenated blood from lungs) → <b>left ventricle</b> (pumps to the body). Valves prevent backflow.",
+          "Blood travels in two circuits: the <b>pulmonary circuit</b> (right heart → lungs → left heart) picks up oxygen and drops off CO₂. The <b>systemic circuit</b> (left heart → body → right heart) delivers oxygen and picks up CO₂ and wastes.",
+          "<b>Arteries</b> carry blood away from the heart at high pressure (thick, muscular walls). <b>Veins</b> return blood to the heart at low pressure (have valves to prevent backflow). <b>Capillaries</b> are the site of all exchange — oxygen, nutrients, CO₂, and wastes cross their thin walls.",
+          "Blood is made of <b>plasma</b> (liquid, ~55%) and formed elements: <b>red blood cells/RBCs</b> (carry O₂ via hemoglobin), <b>white blood cells/WBCs</b> (immune defense), and <b>platelets</b> (clotting). Blood type (ABO and Rh) is determined by antigens on RBC surfaces.",
+          "<b>Blood pressure</b> is the force of blood on vessel walls (systolic/diastolic, e.g., 120/80 mmHg). High blood pressure (hypertension) strains the heart and vessels; low pressure may cause insufficient tissue perfusion. The heart's rhythm is set by the <b>sinoatrial (SA) node</b>, the natural pacemaker."
         ],
         flashcards: [
           {front:"Arteries", back:"Carry blood AWAY from the heart (usually oxygen-rich)."},
@@ -702,10 +732,12 @@ const SUBJECTS = {
         title: "The Respiratory System",
         part: "Part 7 · Transport & Defense",
         summary: [
-          "The respiratory system brings in <b>oxygen</b> and removes <b>carbon dioxide</b>.",
-          "Air travels: nose → pharynx → larynx → trachea → bronchi → <b>alveoli</b> (tiny air sacs in the lungs).",
-          "Gas exchange occurs across alveoli walls into surrounding capillaries by <b>diffusion</b>.",
-          "The <b>diaphragm</b> contracts to draw air in (inhalation) and relaxes to push air out (exhalation)."
+          "The respiratory system's primary role is <b>gas exchange</b>: bringing oxygen into the blood and removing carbon dioxide. It also helps regulate blood pH (since CO₂ is acidic) and is involved in speech and smell.",
+          "The path of air: <b>nose/mouth</b> (filters, warms, humidifies) → <b>pharynx</b> (throat) → <b>larynx</b> (voice box, contains vocal cords) → <b>trachea</b> (windpipe, held open by C-shaped cartilage rings) → <b>bronchi</b> → <b>bronchioles</b> → <b>alveoli</b>.",
+          "<b>Alveoli</b> are tiny air sacs clustered like grapes at the end of bronchioles. They have extremely thin walls (one cell thick) and are surrounded by capillaries. Their enormous total surface area (~70 m²) allows rapid gas exchange by <b>diffusion</b>.",
+          "During <b>inhalation</b>, the diaphragm contracts and flattens, the chest cavity expands, and air is drawn in (lower pressure). During <b>exhalation</b>, the diaphragm relaxes, the chest recoils, and air is pushed out. At rest this is passive; during exercise, accessory muscles assist.",
+          "Gas exchange in the lungs: <b>oxygen</b> diffuses from the alveoli (high O₂) into the blood (low O₂); <b>carbon dioxide</b> diffuses from the blood (high CO₂) into the alveoli (low CO₂) to be exhaled. This works entirely by simple diffusion down concentration gradients.",
+          "The respiratory rate and depth are controlled by the <b>medulla oblongata</b> (brainstem) based on blood CO₂ levels. Conditions like asthma (bronchospasm), pneumonia (fluid in alveoli), and COPD reduce gas exchange efficiency and are major clinical concerns."
         ],
         flashcards: [
           {front:"Alveoli", back:"Tiny air sacs in the lungs where gas exchange occurs."},
@@ -748,10 +780,12 @@ const SUBJECTS = {
         title: "The Digestive System",
         part: "Part 8 · Nutrition & Excretion",
         summary: [
-          "Digestion breaks food into nutrients the body can absorb; it is both mechanical and chemical.",
-          "Path: mouth → esophagus → stomach → <b>small intestine</b> (main absorption) → large intestine.",
-          "<b>Enzymes</b> (amylase, pepsin, lipase) and accessory organs (liver, pancreas, gallbladder) aid digestion.",
-          "Nutrients are absorbed through <b>villi</b> in the small intestine; water is absorbed in the large intestine."
+          "Digestion is the process of breaking down food into small molecules the body can absorb. It has two types: <b>mechanical digestion</b> (physical breakdown — chewing, churning) and <b>chemical digestion</b> (enzyme-driven breakdown of bonds in macromolecules).",
+          "The digestive path: <b>mouth</b> (chewing + salivary amylase starts carb digestion) → <b>esophagus</b> (pushes food down by peristalsis) → <b>stomach</b> (HCl + pepsin digest protein, churns food into chyme) → <b>small intestine</b> (main digestion and absorption) → <b>large intestine</b> (water absorption, feces) → rectum → anus.",
+          "The <b>small intestine</b> (about 6 meters long) is the primary site of both digestion and nutrient absorption. Its lining has <b>villi</b> and <b>microvilli</b> (brush border) that enormously increase surface area. Nutrients (amino acids, glucose, fatty acids) are absorbed into blood capillaries and lymphatic vessels.",
+          "<b>Accessory organs</b> aid digestion: the <b>liver</b> produces bile (stored in the gallbladder) which emulsifies fats into small droplets. The <b>pancreas</b> secretes digestive enzymes (amylase, lipase, proteases) and bicarbonate (to neutralize stomach acid) into the small intestine.",
+          "Key digestive enzymes: <b>amylase</b> (breaks down starch), <b>pepsin</b> (digests proteins in the stomach), <b>lipase</b> (digests fats), <b>trypsin/chymotrypsin</b> (proteases from the pancreas). Each enzyme works best at a specific pH.",
+          "The <b>large intestine</b> (~1.5 meters) absorbs water and electrolytes, solidifying the remaining material into feces. It houses billions of beneficial gut bacteria that produce vitamins (K, B12), aid digestion, and protect against pathogens."
         ],
         flashcards: [
           {front:"Where is most food absorbed?", back:"The small intestine (through villi)."},
@@ -794,10 +828,12 @@ const SUBJECTS = {
         title: "The Urinary System",
         part: "Part 8 · Nutrition & Excretion",
         summary: [
-          "The urinary system filters blood and removes wastes as <b>urine</b>, maintaining water and salt balance.",
-          "The <b>kidneys</b> are the main organs; the functional unit is the <b>nephron</b>.",
-          "Path: kidneys → ureters → bladder → urethra.",
-          "Kidneys help regulate <b>blood pressure</b>, pH, and fluid balance (homeostasis)."
+          "The urinary system eliminates metabolic waste from the blood, regulates fluid and electrolyte balance, controls blood pH, and helps regulate blood pressure. The main organs are the two <b>kidneys</b>, ureters, urinary bladder, and urethra.",
+          "Each kidney contains about one million <b>nephrons</b> — the functional filtering units. Each nephron has a glomerulus (capillary ball for filtration), Bowman's capsule, and a series of tubules that reabsorb useful substances and secrete wastes.",
+          "The kidneys process blood in three steps: <b>filtration</b> (blood is filtered under pressure at the glomerulus), <b>reabsorption</b> (useful substances like glucose, water, and ions are taken back into the blood), and <b>secretion</b> (additional wastes like drugs and H⁺ ions are added to the filtrate).",
+          "The main waste product excreted by the kidneys is <b>urea</b>, formed from the breakdown of amino acids (protein metabolism). Other wastes include creatinine (from muscle) and uric acid (from nucleotides). These are dissolved in water to form urine.",
+          "Urine flows from kidneys → <b>ureters</b> → <b>urinary bladder</b> (storage, holds ~500 mL) → <b>urethra</b> → out of the body. Urination (micturition) is controlled by voluntary and involuntary sphincters.",
+          "The kidneys regulate <b>blood pressure</b> via the renin-angiotensin system (they release renin when pressure drops). They also activate <b>Vitamin D</b>, produce <b>erythropoietin</b> (stimulates red blood cell production), and fine-tune blood pH by excreting or retaining H⁺ and bicarbonate."
         ],
         flashcards: [
           {front:"Main organ of the urinary system", back:"The kidneys."},
@@ -840,10 +876,12 @@ const SUBJECTS = {
         title: "The Immune System",
         part: "Part 7 · Transport & Defense",
         summary: [
-          "The immune system defends the body against <b>pathogens</b> (bacteria, viruses, fungi).",
-          "<b>Innate immunity</b> is the fast, general defense (skin, inflammation, phagocytes); <b>adaptive immunity</b> is specific and remembers.",
-          "<b>White blood cells</b> include phagocytes and lymphocytes (B cells make antibodies, T cells attack infected cells).",
-          "<b>Vaccines</b> train the immune system using harmless antigens to create memory."
+          "The immune system is the body's defense against <b>pathogens</b> (bacteria, viruses, fungi, parasites) and abnormal cells (like cancer cells). It has two main branches: <b>innate (non-specific)</b> immunity and <b>adaptive (specific)</b> immunity.",
+          "<b>Innate immunity</b> is the body's first and second line of defense. First line: physical barriers like <b>skin</b> (prevents entry), mucus (traps pathogens), and stomach acid. Second line: <b>inflammation</b> (brings blood flow and immune cells to the area), <b>fever</b> (slows pathogen growth), and <b>phagocytes</b> (neutrophils and macrophages that engulf and destroy invaders).",
+          "<b>Adaptive immunity</b> is slow (takes days) but highly specific and has <b>memory</b>. It is triggered by <b>antigens</b> — molecules on the surface of pathogens that the immune system recognizes as foreign. Adaptive immunity is carried out by <b>lymphocytes</b> (B cells and T cells).",
+          "<b>B cells</b> produce <b>antibodies</b> — Y-shaped proteins that bind to specific antigens, marking them for destruction or neutralizing them. <b>T cells</b> come in two types: <b>cytotoxic T cells</b> (directly kill infected cells) and <b>helper T cells</b> (coordinate the immune response).",
+          "After an infection is cleared, some B and T cells become <b>memory cells</b> that remain in the body for years. On re-exposure to the same pathogen, the response is <b>faster and stronger</b> — this is the basis of <b>immunity</b> and how <b>vaccines</b> work.",
+          "<b>Vaccines</b> introduce a harmless form of an antigen (killed pathogen, weakened virus, or just a protein) to train the immune system without causing disease. <b>Autoimmune diseases</b> occur when the immune system mistakenly attacks the body's own tissues (e.g., lupus, rheumatoid arthritis, Type 1 diabetes)."
         ],
         flashcards: [
           {front:"Pathogen", back:"A disease-causing organism (bacteria, virus, fungus, parasite)."},
@@ -886,10 +924,12 @@ const SUBJECTS = {
         title: "The Endocrine & Reproductive Systems",
         part: "Part 9 · Regulation & Continuity",
         summary: [
-          "The <b>endocrine system</b> uses <b>hormones</b> (chemical messengers) released by glands into the blood.",
-          "Key glands: pituitary (master gland), thyroid, adrenal, pancreas (insulin/glucagon for blood sugar).",
-          "The <b>reproductive system</b> produces gametes and hormones; it ensures continuation of the species.",
-          "Hormones act slower than nerves but have longer-lasting, widespread effects."
+          "The <b>endocrine system</b> is a collection of glands that produce and secrete <b>hormones</b> — chemical messengers that travel through the bloodstream to target organs and regulate a wide range of body functions including growth, metabolism, reproduction, and mood.",
+          "Major endocrine glands: <b>hypothalamus</b> (links nervous and endocrine systems), <b>pituitary</b> (master gland — controls other glands), <b>thyroid</b> (regulates metabolism), <b>adrenal glands</b> (stress hormones, e.g., adrenaline and cortisol), <b>pancreas</b> (blood sugar), <b>gonads</b> (sex hormones).",
+          "The <b>pancreas</b> regulates blood glucose: <b>insulin</b> (from beta cells) lowers blood sugar by helping cells absorb glucose after a meal. <b>Glucagon</b> (from alpha cells) raises blood sugar between meals by triggering the liver to release stored glucose. This balance is a classic example of negative feedback.",
+          "Hormones work by binding to specific <b>receptors</b> on or inside target cells. Only cells with the right receptor respond. Some hormones (like protein-based hormones) bind to surface receptors and trigger second messengers; steroid hormones enter the cell and directly affect gene expression.",
+          "The <b>reproductive system</b> produces gametes (egg and sperm) for sexual reproduction and secretes sex hormones. In females: <b>estrogen and progesterone</b> regulate the menstrual cycle and pregnancy. In males: <b>testosterone</b> drives sperm production and secondary sex characteristics.",
+          "Compared to the nervous system, hormone signals are <b>slower to act</b> (seconds to hours) but have <b>longer-lasting, body-wide effects</b>. Many body processes require both systems working together — for example, the stress response involves both the nervous system (adrenaline release) and the endocrine system (cortisol from adrenal cortex)."
         ],
         flashcards: [
           {front:"Hormone", back:"A chemical messenger released by glands into the blood."},
@@ -938,10 +978,12 @@ const SUBJECTS = {
         title: "Introduction to Chemistry",
         part: "Part 1 · Matter & Measurement",
         summary: [
-          "<b>Chemistry</b> is the study of matter, its properties, and the changes it undergoes.",
-          "<b>Matter</b> is anything with mass and volume; it exists as solid, liquid, gas, or plasma.",
-          "<b>Physical changes</b> alter form but not identity; <b>chemical changes</b> form new substances.",
-          "The <b>scientific method</b> and careful measurement underlie all of chemistry."
+          "<b>Chemistry</b> is the branch of science that studies matter — what it is made of, its properties, how it changes, and the energy involved in those changes. Chemistry underlies all other sciences, especially biology and medicine.",
+          "<b>Matter</b> is anything that has mass and takes up space. It is made up of atoms and exists in four states: <b>solid</b> (fixed shape and volume), <b>liquid</b> (fixed volume, variable shape), <b>gas</b> (variable shape and volume), and <b>plasma</b> (ionized high-energy state).",
+          "<b>Physical properties</b> (color, density, melting point, boiling point) can be measured without changing the substance. <b>Chemical properties</b> describe how a substance reacts — flammability, reactivity with acid, etc. Understanding both helps identify and use substances safely.",
+          "A <b>physical change</b> alters the form or state of matter without changing its chemical identity (e.g., melting, boiling, cutting). A <b>chemical change</b> (chemical reaction) produces one or more new substances with new properties (e.g., burning, rusting, cooking).",
+          "<b>Pure substances</b> are either <b>elements</b> (one type of atom, can't be broken down) or <b>compounds</b> (two or more elements chemically joined, e.g., H₂O). <b>Mixtures</b> are combinations of substances not chemically joined — they can be <b>homogeneous</b> (uniform, e.g., saltwater) or <b>heterogeneous</b> (uneven, e.g., sand and water).",
+          "The <b>scientific method</b> is essential in chemistry: observe → hypothesize → experiment → analyze → conclude. Accurate <b>measurement</b> using SI units (grams, liters, meters, Kelvin) and significant figures ensures results are reproducible and meaningful."
         ],
         flashcards: [
           {front:"Chemistry", back:"The study of matter, its properties, and its changes."},
@@ -984,10 +1026,12 @@ const SUBJECTS = {
         title: "Atomic Structure",
         part: "Part 2 · Atoms & Elements",
         summary: [
-          "Atoms are the basic units of matter, made of <b>protons</b> (+), <b>neutrons</b> (0), and <b>electrons</b> (–).",
-          "Protons and neutrons form the dense <b>nucleus</b>; electrons orbit in energy levels (shells).",
-          "<b>Atomic number</b> = number of protons (defines the element); <b>mass number</b> = protons + neutrons.",
-          "<b>Isotopes</b> are atoms of the same element with different numbers of neutrons."
+          "The <b>atom</b> is the smallest unit of matter that retains the properties of an element. All matter is composed of atoms. Atoms are made of three subatomic particles: <b>protons</b> (positive, in nucleus), <b>neutrons</b> (neutral, in nucleus), and <b>electrons</b> (negative, orbiting nucleus).",
+          "The <b>nucleus</b> is the small, dense core of the atom containing protons and neutrons. The <b>atomic number</b> equals the number of protons and uniquely identifies the element. The <b>mass number</b> = protons + neutrons. In a neutral atom, the number of electrons equals the number of protons.",
+          "<b>Electrons</b> occupy <b>energy levels</b> (shells) around the nucleus. The first shell holds up to 2 electrons, the second holds up to 8, the third up to 18. The <b>valence electrons</b> (outermost shell) determine chemical behavior and how atoms bond.",
+          "<b>Isotopes</b> are atoms of the same element that have the same number of protons but different numbers of neutrons (and therefore different mass numbers). For example, Carbon-12 has 6 neutrons; Carbon-14 has 8. Isotopes of an element behave the same chemically.",
+          "Some isotopes are <b>radioactive</b> — their unstable nuclei decay by emitting radiation (alpha, beta, or gamma). Radioactive isotopes have important medical uses: Carbon-14 for dating, Iodine-131 for thyroid treatment, Technetium-99m for imaging.",
+          "The <b>electron cloud model</b> (modern atomic model) describes electrons as existing in regions of probability called orbitals (s, p, d, f). Unlike the older Bohr model of circular orbits, orbitals describe where an electron is most likely to be found."
         ],
         flashcards: [
           {front:"Proton", back:"Positively charged particle in the nucleus; defines the element."},
@@ -1030,10 +1074,12 @@ const SUBJECTS = {
         title: "The Periodic Table",
         part: "Part 2 · Atoms & Elements",
         summary: [
-          "The <b>periodic table</b> organizes elements by increasing atomic number.",
-          "<b>Periods</b> are rows; <b>groups/families</b> are columns with similar properties.",
-          "Major categories: <b>metals</b>, <b>nonmetals</b>, and <b>metalloids</b>.",
-          "Key groups include alkali metals, halogens, and noble gases (stable/inert)."
+          "The <b>periodic table</b> organizes all known elements in order of increasing <b>atomic number</b>. It was developed by Dmitri Mendeleev in 1869 and has been refined since. Currently there are 118 confirmed elements.",
+          "Elements are arranged in <b>periods</b> (horizontal rows) and <b>groups/families</b> (vertical columns). Elements in the same group have the same number of valence electrons and therefore similar chemical properties.",
+          "The table is divided into three main categories: <b>metals</b> (left and center — shiny, conductive, malleable), <b>nonmetals</b> (upper right — poor conductors, often gases or brittle solids), and <b>metalloids</b> (staircase boundary — intermediate properties, e.g., silicon used in semiconductors).",
+          "Key groups: <b>Group 1 — Alkali metals</b> (very reactive, 1 valence e⁻, e.g., Na, K); <b>Group 2 — Alkaline earth metals</b> (less reactive, 2 valence e⁻); <b>Group 17 — Halogens</b> (highly reactive nonmetals, 7 valence e⁻, e.g., Cl, F); <b>Group 18 — Noble gases</b> (full outer shell, unreactive, e.g., He, Ne).",
+          "<b>Periodic trends</b> show predictable changes across and down the table: atomic radius increases going down and left; electronegativity and ionization energy increase going up and to the right. These trends arise directly from atomic structure.",
+          "Many elements are biologically critical: <b>O, C, H, N</b> make up most of the body; <b>Ca and P</b> are in bones; <b>Na and K</b> control nerve signals; <b>Fe</b> is in hemoglobin; <b>I</b> is needed for thyroid function. Knowing their periodic position predicts their reactivity."
         ],
         flashcards: [
           {front:"Period", back:"A horizontal row in the periodic table."},
@@ -1076,10 +1122,12 @@ const SUBJECTS = {
         title: "Chemical Bonding",
         part: "Part 3 · Compounds & Bonds",
         summary: [
-          "Atoms bond to achieve a stable, full outer electron shell (the <b>octet rule</b>).",
-          "<b>Ionic bonds</b> form by transferring electrons (metal + nonmetal), creating charged ions.",
-          "<b>Covalent bonds</b> form by sharing electrons (nonmetal + nonmetal).",
-          "<b>Metallic bonds</b> involve a 'sea' of shared electrons among metal atoms."
+          "Atoms form bonds to achieve a more stable electron configuration. The <b>octet rule</b> states that atoms tend to gain, lose, or share electrons until they have 8 electrons in their outermost shell (like a noble gas). Hydrogen is an exception — it needs only 2.",
+          "<b>Ionic bonds</b> form when electrons are completely <b>transferred</b> from one atom to another, usually between a metal and a nonmetal. The atom that loses electrons becomes a positively charged <b>cation</b>; the one that gains becomes a negatively charged <b>anion</b>. The oppositely charged ions attract each other strongly.",
+          "Ionic compounds form crystal lattice structures, have high melting points, and conduct electricity when dissolved in water (they form electrolytes). Example: NaCl (table salt) — Na⁺ and Cl⁻.",
+          "<b>Covalent bonds</b> form when two nonmetal atoms <b>share</b> electron pairs. A <b>single bond</b> shares 1 pair (H₂), a <b>double bond</b> shares 2 pairs (O₂), a <b>triple bond</b> shares 3 pairs (N₂). Covalent compounds are usually gases or liquids at room temp with lower melting points.",
+          "<b>Polar covalent bonds</b> form when electrons are shared unevenly because one atom pulls harder (higher electronegativity). Water (H₂O) has polar covalent bonds — the O pulls electrons more strongly, giving it partial charges. This polarity is responsible for water's special properties.",
+          "<b>Metallic bonds</b> occur in pure metals, where valence electrons are delocalized — they flow freely among all the metal atoms ('sea of electrons'). This explains why metals conduct electricity and heat, are malleable (bendable), and have a shiny luster."
         ],
         flashcards: [
           {front:"Octet rule", back:"Atoms tend to gain, lose, or share electrons to get 8 in their outer shell."},
@@ -1122,10 +1170,12 @@ const SUBJECTS = {
         title: "Chemical Reactions",
         part: "Part 4 · Reactions & Stoichiometry",
         summary: [
-          "A <b>chemical reaction</b> rearranges atoms to form new substances; reactants → products.",
-          "Reactions must obey the <b>law of conservation of mass</b> — atoms are balanced on both sides.",
-          "Main types: synthesis, decomposition, single replacement, double replacement, and combustion.",
-          "Signs of a reaction: gas, precipitate, color change, or temperature change."
+          "A <b>chemical reaction</b> is a process in which the atoms of one or more substances are rearranged to form different substances. The starting substances are <b>reactants</b>; the new substances formed are <b>products</b>. Reactions are represented by a balanced <b>chemical equation</b>.",
+          "The <b>law of conservation of mass</b> states that matter is neither created nor destroyed in a chemical reaction — atoms are only rearranged. Therefore, a balanced equation must have equal numbers of each type of atom on both sides of the arrow.",
+          "Main types of reactions: <b>synthesis</b> (A + B → AB, two things combine), <b>decomposition</b> (AB → A + B, one thing breaks apart), <b>single replacement</b> (A + BC → AC + B), <b>double replacement</b> (AB + CD → AD + CB, ions swap), and <b>combustion</b> (fuel + O₂ → CO₂ + H₂O + heat).",
+          "Evidence that a reaction has occurred: <b>color change</b>, <b>gas production</b> (bubbles or odor), <b>precipitate formation</b> (insoluble solid forms in solution), <b>temperature change</b> (exothermic reactions release heat; endothermic reactions absorb heat), or <b>light emission</b>.",
+          "<b>Exothermic reactions</b> release energy (heat, light) — products have less energy than reactants. Examples: combustion, respiration. <b>Endothermic reactions</b> absorb energy — products have more energy than reactants. Examples: photosynthesis, cooking an egg.",
+          "<b>Reaction rates</b> can be increased by raising temperature, increasing concentration, reducing particle size (more surface area), or adding a <b>catalyst</b> — a substance that speeds up a reaction without being consumed. Biological catalysts (enzymes) are critical in the body."
         ],
         flashcards: [
           {front:"Reactants vs products", back:"Reactants are starting materials; products are what's formed."},
@@ -1168,10 +1218,12 @@ const SUBJECTS = {
         title: "The Mole & Stoichiometry",
         part: "Part 4 · Reactions & Stoichiometry",
         summary: [
-          "The <b>mole</b> is a counting unit: 1 mole = 6.022 × 10²³ particles (<b>Avogadro's number</b>).",
-          "<b>Molar mass</b> (g/mol) equals an element's atomic mass; for compounds, sum the atoms.",
-          "<b>Stoichiometry</b> uses balanced equations to relate amounts of reactants and products.",
-          "Mole ratios from the balanced equation let you convert between substances."
+          "The <b>mole</b> is a unit used to count extremely large numbers of particles. One mole = <b>6.022 × 10²³</b> particles (atoms, molecules, ions, etc.) — this is <b>Avogadro's number</b>. Just like a 'dozen' always means 12, a 'mole' always means 6.022 × 10²³.",
+          "The <b>molar mass</b> of a substance is the mass of one mole of that substance, expressed in <b>grams per mole (g/mol)</b>. For an element, it equals the atomic mass from the periodic table. For a compound, add up the molar masses of all atoms (e.g., H₂O: 2×1 + 16 = 18 g/mol).",
+          "You can convert between <b>moles, mass, and number of particles</b> using: mass (g) ÷ molar mass (g/mol) = moles; moles × Avogadro's number = number of particles. These conversions are the foundation of all quantitative chemistry.",
+          "<b>Stoichiometry</b> is the calculation of the quantities of reactants and products in a chemical reaction. It relies on the <b>mole ratios</b> given by the coefficients in a balanced equation. For example, 2H₂ + O₂ → 2H₂O tells you 2 mol H₂ reacts with 1 mol O₂ to produce 2 mol H₂O.",
+          "In real reactions, the <b>limiting reactant</b> is the substance that runs out first and therefore limits how much product can be made. The other reactant is in excess. Identifying the limiting reactant is key to calculating actual yield.",
+          "Stoichiometry has important applications in nursing and pharmacy: calculating <b>drug dosages</b>, IV fluid concentrations, and understanding how much of a drug the body needs to reach a therapeutic level all rely on mole-based calculations."
         ],
         flashcards: [
           {front:"Mole", back:"6.022 × 10²³ particles of a substance (Avogadro's number)."},
@@ -1214,10 +1266,12 @@ const SUBJECTS = {
         title: "States of Matter & Gas Laws",
         part: "Part 5 · Physical Chemistry",
         summary: [
-          "Matter changes state as energy is added or removed: melting, freezing, evaporation, condensation, sublimation.",
-          "<b>Kinetic theory</b>: particles are in constant motion; temperature measures average kinetic energy.",
-          "<b>Gas laws</b> relate pressure, volume, and temperature (Boyle's, Charles's, combined laws).",
-          "<b>Boyle's law</b>: P and V are inversely related; <b>Charles's law</b>: V and T are directly related."
+          "The <b>kinetic molecular theory</b> states that all particles of matter are in constant, random motion. The faster they move, the higher the temperature. In solids, particles vibrate in place; in liquids, they move around each other; in gases, they move freely and fast.",
+          "Matter changes state when enough energy is added or removed: <b>melting</b> (solid→liquid), <b>freezing</b> (liquid→solid), <b>evaporation</b> (liquid→gas), <b>condensation</b> (gas→liquid), <b>sublimation</b> (solid→gas, e.g., dry ice). During state changes, temperature remains constant while energy breaks or forms intermolecular forces.",
+          "<b>Boyle's Law</b>: At constant temperature, pressure (P) and volume (V) of a gas are inversely proportional — if you squeeze a gas (↓V), the pressure increases (↑P). Equation: P₁V₁ = P₂V₂. Example: lungs expand to lower pressure and draw air in.",
+          "<b>Charles's Law</b>: At constant pressure, volume (V) and temperature (T in Kelvin) of a gas are directly proportional — heating a gas makes it expand. Equation: V₁/T₁ = V₂/T₂. Example: a balloon shrinks in cold weather.",
+          "The <b>combined gas law</b> merges Boyle's and Charles's: P₁V₁/T₁ = P₂V₂/T₂. The <b>ideal gas law</b> is PV = nRT (where n = moles, R = gas constant). These laws describe how real gases behave under most conditions.",
+          "These gas laws have direct medical relevance: <b>mechanical ventilators</b> use pressure changes to push air into lungs; <b>oxygen tanks</b> store gas under high pressure; <b>hyperbaric oxygen therapy</b> increases dissolved O₂ by raising pressure (Boyle's/Henry's law)."
         ],
         flashcards: [
           {front:"Kinetic theory", back:"All particles are in constant motion; heat increases their motion."},
@@ -1260,10 +1314,12 @@ const SUBJECTS = {
         title: "Solutions & Concentration",
         part: "Part 5 · Physical Chemistry",
         summary: [
-          "A <b>solution</b> is a homogeneous mixture of a <b>solute</b> dissolved in a <b>solvent</b>.",
-          "Water is the 'universal solvent' because of its polarity.",
-          "<b>Concentration</b> describes how much solute is present (e.g., molarity = moles/liter).",
-          "Solubility is affected by temperature, pressure (for gases), and the nature of solute/solvent ('like dissolves like')."
+          "A <b>solution</b> is a homogeneous (uniform) mixture in which a <b>solute</b> (the substance being dissolved) is dispersed throughout a <b>solvent</b> (the dissolving medium). The solvent is present in the larger amount. Solutions can be liquid, gas (air), or solid (alloys).",
+          "<b>Water</b> is called the 'universal solvent' because its polarity allows it to dissolve a wide variety of ionic and polar substances. When an ionic compound like NaCl dissolves, water molecules surround and pull apart the ions — this is called <b>hydration</b>.",
+          "The principle <b>'like dissolves like'</b> means polar solvents dissolve polar/ionic solutes, and nonpolar solvents dissolve nonpolar solutes. For example, oil (nonpolar) does not dissolve in water (polar) — that's why oil and water don't mix.",
+          "<b>Concentration</b> measures how much solute is dissolved per amount of solution. <b>Molarity (M)</b> = moles of solute ÷ liters of solution (mol/L). A 1 M solution contains 1 mole of solute in 1 liter. Other units: percent by mass, parts per million (ppm) for very dilute solutions.",
+          "<b>Solubility</b> is the maximum amount of solute that dissolves in a given amount of solvent at a specific temperature. A <b>saturated solution</b> holds the maximum. <b>Temperature</b> usually increases solubility of solids in liquid; for gases, higher temperature decreases solubility (gases escape as liquid warms).",
+          "In medicine, solutions are critically important: IV fluids must be <b>isotonic</b> (~0.9% NaCl or 5% dextrose) to match body fluid concentration. Drug concentrations are expressed in mg/mL or mg/dL. Understanding molarity is essential for dilutions and mixing medications accurately."
         ],
         flashcards: [
           {front:"Solute", back:"The substance being dissolved (e.g., salt)."},
@@ -1306,10 +1362,12 @@ const SUBJECTS = {
         title: "Acids, Bases & pH",
         part: "Part 6 · Reactions in Solution",
         summary: [
-          "<b>Acids</b> release H⁺ ions (pH < 7); <b>bases</b> release OH⁻ ions (pH > 7).",
-          "The <b>pH scale</b> runs 0–14; 7 is neutral. Each unit is a 10× change in acidity.",
-          "Acids and bases <b>neutralize</b> each other to form water and a salt.",
-          "<b>Indicators</b> (like litmus) and <b>buffers</b> (resist pH change) are important tools, especially in the body."
+          "An <b>acid</b> is a substance that donates hydrogen ions (H⁺) in water — it increases the H⁺ concentration. A <b>base</b> (alkali) accepts H⁺ ions or donates OH⁻ ions, decreasing H⁺ concentration. Strong acids/bases fully dissociate; weak ones partially dissociate.",
+          "The <b>pH scale</b> (0–14) measures the concentration of H⁺ ions in a solution. <b>pH 7</b> is neutral (pure water). <b>Below 7 is acidic</b> (more H⁺), <b>above 7 is basic</b> (less H⁺). Each unit change represents a <b>10-fold change</b> in H⁺ concentration — pH 3 is 10× more acidic than pH 4.",
+          "Common acids: hydrochloric acid (HCl, stomach acid), acetic acid (vinegar), carbonic acid (blood pH regulation). Common bases: sodium hydroxide (NaOH, drain cleaner), sodium bicarbonate (baking soda, antacid), ammonia (cleaning products).",
+          "<b>Neutralization</b> occurs when an acid and a base react: H⁺ + OH⁻ → H₂O. The products are water and a salt. The pH moves toward neutral. Example: HCl + NaOH → NaCl + H₂O. This principle is used in antacids (base neutralizes stomach acid).",
+          "<b>Indicators</b> are substances that change color at specific pH ranges (e.g., litmus paper turns red in acid, blue in base). pH meters give more precise readings. Used in labs and clinically to quickly test fluid pH.",
+          "<b>Buffers</b> are solutions that resist changes in pH when small amounts of acid or base are added. They contain a weak acid and its conjugate base. Blood is maintained at pH <b>7.35–7.45</b> by the bicarbonate buffer system (H₂CO₃/HCO₃⁻). A blood pH outside 6.8–7.8 is fatal — the kidneys and lungs work together to keep it in range."
         ],
         flashcards: [
           {front:"Acid", back:"A substance that releases H⁺ ions; pH below 7."},
@@ -1352,10 +1410,12 @@ const SUBJECTS = {
         title: "Organic Chemistry Basics",
         part: "Part 7 · Carbon Chemistry",
         summary: [
-          "<b>Organic chemistry</b> is the study of carbon-containing compounds.",
-          "Carbon forms four bonds, allowing chains, rings, and complex molecules.",
-          "<b>Hydrocarbons</b> contain only carbon and hydrogen (alkanes, alkenes, alkynes).",
-          "<b>Functional groups</b> (e.g., –OH alcohol, –COOH carboxylic acid) give molecules their properties."
+          "<b>Organic chemistry</b> is the study of carbon-containing compounds. Carbon is the backbone of life — it forms millions of compounds because it can form <b>four covalent bonds</b>, bond to other carbons (chains, branches, rings), and bond to many other elements.",
+          "<b>Hydrocarbons</b> contain only carbon and hydrogen. They are the simplest organic compounds. <b>Alkanes</b> have only single C–C bonds (e.g., methane CH₄, propane C₃H₈); <b>alkenes</b> have at least one C=C double bond; <b>alkynes</b> have a C≡C triple bond. Double and triple bonds make molecules more reactive.",
+          "<b>Functional groups</b> are specific arrangements of atoms within molecules that give the molecule characteristic chemical properties. The same functional group behaves similarly regardless of the size of the carbon chain attached.",
+          "Key functional groups: <b>–OH (hydroxyl)</b> = alcohol (e.g., ethanol); <b>–COOH (carboxyl)</b> = carboxylic acid (e.g., acetic acid); <b>–NH₂ (amino)</b> = amine (e.g., amino acids); <b>–C=O (carbonyl)</b> = aldehyde or ketone; <b>–COO– (ester linkage)</b> = ester or lipid bond.",
+          "<b>Isomers</b> are compounds with the same molecular formula but different structural arrangements. Because carbon can bond in so many ways, isomers can have very different properties — including different biological activities and drug effects.",
+          "Organic compounds are the basis of all <b>biomolecules</b> and <b>pharmaceuticals</b>. Understanding functional groups is key to pharmacology: the –OH groups of alcohols affect solubility; the –COOH groups in aspirin make it acidic; many drugs are modified to change their absorption or stability in the body."
         ],
         flashcards: [
           {front:"Organic chemistry", back:"The study of carbon-containing compounds."},
@@ -1398,10 +1458,12 @@ const SUBJECTS = {
         title: "Biochemistry",
         part: "Part 7 · Carbon Chemistry",
         summary: [
-          "<b>Biochemistry</b> applies chemistry to living systems and biological molecules.",
-          "The four major biomolecules: <b>carbohydrates, lipids, proteins, nucleic acids</b>.",
-          "<b>Enzymes</b> are protein catalysts that speed up reactions by lowering activation energy.",
-          "Metabolism includes <b>catabolism</b> (breaking down, releasing energy) and <b>anabolism</b> (building up, using energy)."
+          "<b>Biochemistry</b> is the chemistry of life — the study of the chemical processes, reactions, and molecules that occur in living organisms. It bridges chemistry and biology and is essential for understanding medicine, nutrition, pharmacology, and disease.",
+          "The four major <b>biological macromolecules</b> are all carbon-based polymers (large repeating chain molecules): <b>carbohydrates</b> (monosaccharide monomers, energy/structure), <b>lipids</b> (fatty acids and glycerol, membranes and energy storage), <b>proteins</b> (amino acid chains, diverse functions), <b>nucleic acids</b> (nucleotide chains, genetic information).",
+          "<b>Enzymes</b> are biological catalysts — almost always proteins — that dramatically speed up chemical reactions by lowering <b>activation energy</b> (the energy needed to start the reaction). Enzymes are highly specific: each enzyme binds only to its <b>substrate</b> (the reactant) at the active site, like a lock and key.",
+          "Enzyme activity is affected by temperature, pH, and inhibitors. Each enzyme has an <b>optimal temperature and pH</b>. Too much heat or extreme pH causes <b>denaturation</b> (the enzyme loses its shape and stops working). This is why fever above a certain point is dangerous.",
+          "<b>Metabolism</b> is the sum of all chemical reactions in the body. <b>Catabolism</b> breaks down large molecules into smaller ones and releases energy (e.g., digestion of food, cellular respiration). <b>Anabolism</b> builds larger molecules from smaller ones using energy (e.g., protein synthesis, building muscle, making DNA).",
+          "Many <b>drugs and toxins</b> work by interfering with enzymes: antibiotics inhibit bacterial enzymes; aspirin inhibits COX enzymes (reducing inflammation); cyanide blocks cytochrome c oxidase in the electron transport chain. Understanding biochemistry is fundamental to pharmacology and clinical practice."
         ],
         flashcards: [
           {front:"Biochemistry", back:"The chemistry of living organisms and their molecules."},
@@ -1444,10 +1506,12 @@ const SUBJECTS = {
         title: "Nuclear Chemistry",
         part: "Part 8 · The Nucleus & Energy",
         summary: [
-          "<b>Nuclear chemistry</b> studies changes in the atom's nucleus, involving huge energy changes.",
-          "<b>Radioactivity</b> is the emission of particles/energy from unstable nuclei (alpha, beta, gamma).",
-          "<b>Half-life</b> is the time for half of a radioactive sample to decay.",
-          "<b>Fission</b> splits heavy nuclei; <b>fusion</b> joins light nuclei (powers the sun)."
+          "<b>Nuclear chemistry</b> deals with changes in the nucleus of an atom, as opposed to regular chemistry which involves electron changes. Nuclear reactions involve enormous amounts of energy — far greater than chemical reactions — because they involve changes to nuclear forces.",
+          "<b>Radioactivity</b> is the spontaneous emission of particles or energy from the nucleus of an unstable atom as it decays toward a more stable form. There are three main types: <b>alpha (α) radiation</b> (2 protons + 2 neutrons, low penetration), <b>beta (β) radiation</b> (an electron, moderate penetration), and <b>gamma (γ) radiation</b> (high-energy electromagnetic waves, most penetrating, requires lead shielding).",
+          "The <b>half-life</b> of a radioactive isotope is the time it takes for half of the atoms in a sample to decay. Half-lives range from fractions of a second to billions of years. After one half-life, 50% remains; after two, 25%; after three, 12.5% — and so on.",
+          "<b>Nuclear fission</b> is the splitting of a heavy nucleus (e.g., uranium-235) into two smaller nuclei, releasing a tremendous amount of energy and neutrons that can trigger a chain reaction. This is the basis of nuclear power plants and atomic bombs.",
+          "<b>Nuclear fusion</b> is the joining of two light nuclei (e.g., hydrogen isotopes) to form a heavier nucleus, releasing even more energy than fission. This is what powers the sun and stars. Fusion produces far more energy and less radioactive waste than fission.",
+          "Radioactive isotopes have important <b>medical applications</b>: <b>Carbon-14</b> for radiocarbon dating; <b>Iodine-131</b> to treat thyroid cancer (thyroid absorbs iodine); <b>Technetium-99m</b> for diagnostic imaging (PET and SPECT scans); <b>Cobalt-60</b> for radiation therapy to destroy tumors. The goal is to target specific tissues while minimizing damage to healthy cells."
         ],
         flashcards: [
           {front:"Radioactivity", back:"Emission of particles/energy from unstable atomic nuclei."},
