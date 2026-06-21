@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyHub · Biology & Chemistry</title>
+<style>
+  :root{
+    --bg:#0a1612;--bg2:#0d1f1a;--teal:#14b8a6;--teal-dark:#0d6e6e;
+    --teal-glow:rgba(20,184,166,.35);--mint:#5eead4;--text:#e6fffa;
+    --muted:#8fb3aa;--card:rgba(255,255,255,.04);--border:rgba(20,184,166,.18);
+    --good:#34d399;--bad:#f87171;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+
+  /* background */
+  .bg-layer{position:fixed;inset:0;z-index:-2;overflow:hidden;background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(13,110,110,.45), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(20,184,166,.25), transparent 55%),
+    linear-gradient(160deg,var(--bg),var(--bg2))}
+  .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;animation:float 18s ease-in-out infinite}
+  .blob.b1{width:420px;height:420px;background:radial-gradient(circle,#14b8a6,transparent 70%);top:-100px;left:-80px}
+  .blob.b2{width:380px;height:380px;background:radial-gradient(circle,#0d6e6e,transparent 70%);bottom:-120px;right:-60px;animation-delay:-6s}
+  .blob.b3{width:300px;height:300px;background:radial-gradient(circle,#22d3ee,transparent 70%);top:40%;left:55%;animation-delay:-12s;opacity:.3}
+  @keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.1)}66%{transform:translate(-30px,40px) scale(.95)}}
+  .particles{position:fixed;inset:0;z-index:-1;pointer-events:none}
+  .particle{position:absolute;background:var(--mint);border-radius:50%;opacity:.4;box-shadow:0 0 12px var(--teal-glow);animation:rise linear infinite}
+  @keyframes rise{from{transform:translateY(100vh);opacity:0}10%{opacity:.6}90%{opacity:.6}to{transform:translateY(-10vh) translateX(40px);opacity:0}}
+
+  nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 7vw;backdrop-filter:blur(12px);background:rgba(10,22,18,.55);border-bottom:1px solid var(--border)}
+  .logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.25rem;cursor:pointer}
+  .logo .dot{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--teal),var(--teal-dark));display:grid;place-items:center;box-shadow:0 0 20px var(--teal-glow);font-size:1.1rem}
+  .logo span{background:linear-gradient(90deg,var(--mint),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .nav-links{display:flex;gap:28px;font-size:.95rem}
+  .nav-links a{color:var(--muted);text-decoration:none;transition:.2s;cursor:pointer}
+  .nav-links a:hover{color:var(--mint)}
+
+  .view{display:none;animation:fade .5s ease}
+  .view.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+  /* hero */
+  .hero{text-align:center;padding:8vh 7vw 4vh;max-width:900px;margin:0 auto}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border:1px solid var(--border);border-radius:999px;font-size:.82rem;color:var(--mint);background:var(--card);margin-bottom:28px}
+  .badge .pulse{width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 var(--teal-glow)}70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.05;font-weight:800;margin-bottom:22px}
+  .hero h1 .grad{background:linear-gradient(90deg,var(--mint),var(--teal),#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 auto 38px;line-height:1.7}
+  .cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .btn{padding:15px 32px;border-radius:14px;font-size:1rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:.25s}
+  .btn-primary{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;box-shadow:0 8px 30px var(--teal-glow)}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 40px var(--teal-glow)}
+  .btn-ghost{background:var(--card);color:var(--text);border:1px solid var(--border)}
+  .btn-ghost:hover{border-color:var(--teal);transform:translateY(-3px)}
+
+  .subjects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;max-width:980px;margin:2vh auto 7vh;padding:0 7vw}
+  .subject{position:relative;padding:34px;border-radius:22px;background:var(--card);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:.3s}
+  .subject:hover{transform:translateY(-8px);border-color:var(--teal)}
+  .subject::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--teal-glow),transparent 50%);opacity:0;transition:.3s}
+  .subject:hover::before{opacity:1}
+  .subject .icon{font-size:2.6rem;margin-bottom:18px}
+  .subject h3{font-size:1.5rem;margin-bottom:10px;position:relative}
+  .subject p{color:var(--muted);line-height:1.6;margin-bottom:18px;position:relative}
+  .subject .meta{display:flex;gap:18px;font-size:.85rem;color:var(--mint);position:relative}
+  .subject .meta b{color:var(--text)}
+  .subject .arrow{position:absolute;bottom:28px;right:30px;font-size:1.4rem;color:var(--teal);transition:.3s}
+  .subject:hover .arrow{transform:translateX(6px)}
+
+  .section-title{text-align:center;font-size:2rem;margin:2vh 0 8px}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:42px}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;max-width:1000px;margin:0 auto 8vh;padding:0 7vw}
+  .feature{padding:28px;border-radius:18px;background:var(--card);border:1px solid var(--border);transition:.3s}
+  .feature:hover{transform:translateY(-5px);border-color:var(--teal);background:rgba(20,184,166,.06)}
+  .feature .fi{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,var(--teal-dark),var(--teal));margin-bottom:16px;box-shadow:0 6px 20px var(--teal-glow)}
+  .feature h4{font-size:1.15rem;margin-bottom:8px}
+  .feature p{color:var(--muted);font-size:.92rem;line-height:1.6}
+
+  /* ---- study app ---- */
+  .app{display:grid;grid-template-columns:280px 1fr;gap:0;max-width:1300px;margin:0 auto;min-height:calc(100vh - 67px)}
+  .sidebar{border-right:1px solid var(--border);padding:24px 16px;background:rgba(10,22,18,.4)}
+  .sidebar .back{display:flex;align-items:center;gap:8px;color:var(--mint);cursor:pointer;font-size:.9rem;margin-bottom:18px}
+  .sidebar .back:hover{color:var(--teal)}
+  .sidebar h2{font-size:1.2rem;margin-bottom:4px}
+  .sidebar .sub-label{color:var(--muted);font-size:.82rem;margin-bottom:18px}
+  .chap-list{display:flex;flex-direction:column;gap:4px;max-height:calc(100vh - 200px);overflow-y:auto}
+  .chap-list::-webkit-scrollbar{width:6px}
+  .chap-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+  .chap-item{padding:11px 14px;border-radius:10px;cursor:pointer;font-size:.9rem;color:var(--muted);transition:.2s;display:flex;align-items:center;gap:10px}
+  .chap-item:hover{background:var(--card);color:var(--text)}
+  .chap-item.active{background:linear-gradient(135deg,var(--teal-dark),var(--teal));color:#fff}
+  .chap-item .n{width:24px;height:24px;border-radius:7px;background:rgba(255,255,255,.08);display:grid;place-items:center;font-size:.78rem;flex-shrink:0}
+  .chap-item.active .n{background:rgba(255,255,255,.2)}
+
+  .content{padding:32px 5vw}
+  .content h1{font-size:2rem;margin-bottom:6px}
+  .content .part{color:var(--mint);font-size:.85rem;margin-bottom:24px;text-transform:uppercase;letter-spacing:1px}
+  .tabs{display:flex;gap:8px;margin-bottom:30px;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:0}
+  .tab{padding:11px 20px;border-radius:10px 10px 0 0;cursor:pointer;color:var(--muted);font-weight:600;font-size:.92rem;transition:.2s;border-bottom:2px solid transparent}
+  .tab:hover{color:var(--text)}
+  .tab.active{color:var(--mint);border-bottom-color:var(--teal)}
+  .panel{display:none;animation:fade .4s ease}
+  .panel.active{display:block}
+
+  /* summary */
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:14px;max-width:760px}
+  .summary-list li{padding:18px 22px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:12px;line-height:1.6;color:var(--text)}
+  .summary-list li b{color:var(--mint)}
+
+  /* flashcards */
+  .fc-wrap{max-width:560px;margin:0 auto}
+  .fc-counter{text-align:center;color:var(--muted);margin-bottom:16px;font-size:.9rem}
+  .flashcard{perspective:1200px;height:300px;cursor:pointer;margin-bottom:24px}
+  .fc-inner{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+  .flashcard.flipped .fc-inner{transform:rotateY(180deg)}
+  .fc-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;display:grid;place-items:center;padding:36px;text-align:center}
+  .fc-front{background:linear-gradient(135deg,rgba(20,184,166,.12),var(--card));border:1px solid var(--border)}
+  .fc-back{background:linear-gradient(135deg,var(--teal-dark),var(--teal));color:#fff;transform:rotateY(180deg)}
+  .fc-face .q-label{position:absolute;top:18px;left:22px;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;opacity:.6}
+  .fc-face .txt{font-size:1.3rem;line-height:1.5;font-weight:600}
+  .fc-face .hint{position:absolute;bottom:18px;font-size:.78rem;opacity:.5}
+  .fc-nav{display:flex;justify-content:center;gap:12px}
+  .fc-btn{width:48px;height:48px;border-radius:12px;background:var(--card);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:1.1rem;transition:.2s}
+  .fc-btn:hover{border-color:var(--teal);background:rgba(20,184,166,.1)}
+
+  /* quiz */
+  .quiz{max-width:760px}
+  .question{padding:24px;background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:18px}
+  .question .qh{font-weight:600;margin-bottom:16px;line-height:1.5}
+  .question .qh .qn{color:var(--mint);margin-right:8px}
+  .opts{display:flex;flex-direction:column;gap:10px}
+  .opt{padding:13px 18px;border-radius:10px;border:1px solid var(--border);cursor:pointer;transition:.2s;background:rgba(255,255,255,.02)}
+  .opt:hover{border-color:var(--teal);background:rgba(20,184,166,.06)}
+  .opt.correct{border-color:var(--good);background:rgba(52,211,153,.12);color:#fff}
+  .opt.wrong{border-color:var(--bad);background:rgba(248,113,113,.12)}
+  .opt.disabled{pointer-events:none}
+  .explain{margin-top:14px;padding:14px 18px;border-radius:10px;background:rgba(20,184,166,.08);border-left:3px solid var(--teal);font-size:.9rem;line-height:1.6;color:var(--muted);display:none}
+  .explain.show{display:block}
+  .explain b{color:var(--mint)}
+
+  /* assignment */
+  .assignment{max-width:780px}
+  .assign-card{padding:28px;background:var(--card);border:1px solid var(--border);border-radius:16px}
+  .assign-card h3{font-size:1.3rem;margin-bottom:6px;color:var(--mint)}
+  .assign-card .scenario{padding:16px 20px;background:rgba(20,184,166,.06);border-radius:12px;line-height:1.7;margin:16px 0;border-left:3px solid var(--teal)}
+  .assign-card ol{margin:0 0 8px 20px;line-height:1.9}
+  .assign-card ol li{padding-left:6px}
+  .ans-toggle{margin-top:22px;padding:13px 26px;border-radius:12px;background:linear-gradient(135deg,var(--teal-dark),var(--teal));color:#fff;border:none;cursor:pointer;font-weight:600;transition:.2s}
+  .ans-toggle:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--teal-glow)}
+  .answers{margin-top:20px;display:none}
+  .answers.show{display:block;animation:fade .4s ease}
+  .answers h4{color:var(--mint);margin-bottom:12px}
+  .answers .akey{padding:14px 18px;background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.25);border-radius:10px;margin-bottom:10px;line-height:1.6}
+  .answers .akey b{color:var(--good)}
+
+  footer{text-align:center;padding:34px;color:var(--muted);border-top:1px solid var(--border);font-size:.9rem}
+  footer b{color:var(--mint)}
+  @media(max-width:760px){.app{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid var(--border)}.chap-list{max-height:200px}.nav-links{display:none}}
+</style>
+</head>
+<body>
+  <div class="bg-layer"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+  <div class="particles" id="particles"></div>
+
+  <nav>
+    <div class="logo" onclick="goHome()"><div class="dot">🧬</div> Study<span>Hub</span></div>
+    <div class="nav-links">
+      <a onclick="goHome()">Home</a>
+      <a onclick="openSubject('biology')">Biology</a>
+      <a onclick="openSubject('chemistry')">Chemistry</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <div id="home" class="view active">
+    <header class="hero">
+      <div class="badge"><span class="pulse"></span> Nursing Prerequisites · Biology · Chemistry</div>
+      <h1>Master your science.<br><span class="grad">One chapter at a time.</span></h1>
+      <p>Flashcards, bite-sized summaries, practice questions and assignments with an answer key — everything you need to ace Biology, Anatomy & Chemistry, beautifully in one place.</p>
+      <div class="cta">
+        <a class="btn btn-primary" onclick="openSubject('biology')">Start studying →</a>
+        <a href="#features" class="btn btn-ghost">See features</a>
+      </div>
+    </header>
+
+    <section class="subjects">
+      <div class="subject" onclick="openSubject('biology')">
+        <div class="icon">🧬</div><h3>Biology & Anatomy</h3>
+        <p>Cells, tissues, body systems and how life works — from molecules to the whole human body.</p>
+        <div class="meta"><span><b id="bioCh">–</b> chapters</span><span><b id="bioFc">–</b> cards</span><span><b id="bioQz">–</b> questions</span></div>
+        <div class="arrow">→</div>
+      </div>
+      <div class="subject" onclick="openSubject('chemistry')">
+        <div class="icon">⚗️</div><h3>Chemistry</h3>
+        <p>Atoms, bonds, reactions and solutions — the chemical foundations behind every living process.</p>
+        <div class="meta"><span><b id="chCh">–</b> chapters</span><span><b id="chFc">–</b> cards</span><span><b id="chQz">–</b> questions</span></div>
+        <div class="arrow">→</div>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="features">Everything you need to learn</h2>
+    <p class="section-sub">Four study tools, designed to make hard topics click.</p>
+    <section class="features">
+      <div class="feature"><div class="fi">🔄</div><h4>Flashcards</h4><p>Flip-to-reveal cards for every chapter to drill the key terms until they stick.</p></div>
+      <div class="feature"><div class="fi">📖</div><h4>Chapter Summaries</h4><p>Short, clear recaps of each chapter so you grasp the big picture fast.</p></div>
+      <div class="feature"><div class="fi">✏️</div><h4>Mini Questions</h4><p>Quick multiple-choice quizzes with instant explanations to test your skills.</p></div>
+      <div class="feature"><div class="fi">📝</div><h4>Assignments</h4><p>Scenario-based tasks with a full answer key so you can check your own work.</p></div>
+    </section>
+    <footer>Built for focused studying · <b>StudyHub</b> · Biology, Anatomy & Chemistry</footer>
+  </div>
+
+  <!-- STUDY APP -->
+  <div id="study" class="view">
+    <div class="app">
+      <aside class="sidebar">
+        <div class="back" onclick="goHome()">← All subjects</div>
+        <h2 id="subjTitle">Subject</h2>
+        <div class="sub-label" id="subjLabel"></div>
+        <div class="chap-list" id="chapList"></div>
+      </aside>
+      <main class="content" id="chapContent"></main>
+    </div>
+    <footer>Built for focused studying · <b>StudyHub</b></footer>
+  </div>
+
+<script src="data.js"></script>
+<script>
+  // particles
+  const pc=document.getElementById('particles');
+  for(let i=0;i<28;i++){const p=document.createElement('div');p.className='particle';
+    p.style.left=Math.random()*100+'vw';p.style.animationDuration=(8+Math.random()*12)+'s';
+    p.style.animationDelay=(-Math.random()*15)+'s';const s=3+Math.random()*5;
+    p.style.width=s+'px';p.style.height=s+'px';pc.appendChild(p);}
+
+  let CUR={subject:null,chapter:0,card:0};
+
+  // stats on home
+  function setStats(){
+    if(typeof SUBJECTS==='undefined')return;
+    const b=SUBJECTS.biology,c=SUBJECTS.chemistry;
+    const cnt=s=>({ch:s.chapters.length,
+      fc:s.chapters.reduce((a,x)=>a+(x.flashcards?.length||0),0),
+      qz:s.chapters.reduce((a,x)=>a+(x.quiz?.length||0),0)});
+    const bs=cnt(b),cs=cnt(c);
+    bioCh.textContent=bs.ch;bioFc.textContent=bs.fc;bioQz.textContent=bs.qz;
+    chCh.textContent=cs.ch;chFc.textContent=cs.fc;chQz.textContent=cs.qz;
+  }
+
+  function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+  function goHome(){show('home');}
+
+  function openSubject(key){
+    CUR.subject=key;CUR.chapter=0;
+    const s=SUBJECTS[key];
+    document.getElementById('subjTitle').textContent=s.name;
+    document.getElementById('subjLabel').textContent=s.chapters.length+' chapters';
+    const list=document.getElementById('chapList');list.innerHTML='';
+    s.chapters.forEach((ch,i)=>{
+      const d=document.createElement('div');d.className='chap-item'+(i===0?' active':'');
+      d.innerHTML=`<span class="n">${i+1}</span><span>${ch.title}</span>`;
+      d.onclick=()=>{CUR.chapter=i;renderChapter();document.querySelectorAll('.chap-item').forEach(x=>x.classList.remove('active'));d.classList.add('active');};
+      list.appendChild(d);
+    });
+    show('study');renderChapter();
+  }
+
+  function renderChapter(){
+    const s=SUBJECTS[CUR.subject];const ch=s.chapters[CUR.chapter];CUR.card=0;
+    const fc=ch.flashcards||[],qz=ch.quiz||[],as=ch.assignment;
+    const el=document.getElementById('chapContent');
+    el.innerHTML=`
+      <h1>${ch.title}</h1>
+      <div class="part">${ch.part||s.name}</div>
+      <div class="tabs">
+        <div class="tab active" data-p="summary">📖 Summary</div>
+        <div class="tab" data-p="cards">🔄 Flashcards</div>
+        <div class="tab" data-p="quiz">✏️ Quiz</div>
+        <div class="tab" data-p="assign">📝 Assignment</div>
+      </div>
+      <div class="panel active" id="p-summary">
+        <ul class="summary-list">${(ch.summary||[]).map(s=>`<li>${s}</li>`).join('')}</ul>
+      </div>
+      <div class="panel" id="p-cards">${fc.length?`
+        <div class="fc-wrap">
+          <div class="fc-counter"><span id="fcNum">1</span> / ${fc.length}</div>
+          <div class="flashcard" id="flashcard" onclick="flipCard()">
+            <div class="fc-inner">
+              <div class="fc-face fc-front"><div class="q-label">Term</div><div class="txt" id="fcFront"></div><div class="hint">Click to flip</div></div>
+              <div class="fc-face fc-back"><div class="q-label">Definition</div><div class="txt" id="fcBack"></div><div class="hint">Click to flip back</div></div>
+            </div>
+          </div>
+          <div class="fc-nav">
+            <button class="fc-btn" onclick="prevCard(event)">←</button>
+            <button class="fc-btn" onclick="flipCard()">⟲</button>
+            <button class="fc-btn" onclick="nextCard(event)">→</button>
+          </div>
+        </div>`:'<p style="color:var(--muted)">No flashcards yet.</p>'}
+      </div>
+      <div class="panel" id="p-quiz"><div class="quiz">${qz.map((q,qi)=>`
+        <div class="question">
+          <div class="qh"><span class="qn">Q${qi+1}.</span>${q.q}</div>
+          <div class="opts">${q.options.map((o,oi)=>`<div class="opt" onclick="answer(${qi},${oi},${q.answer},this)">${o}</div>`).join('')}</div>
+          <div class="explain" id="ex-${qi}"><b>Explanation:</b> ${q.explanation||''}</div>
+        </div>`).join('')||'<p style="color:var(--muted)">No quiz yet.</p>'}</div>
+      </div>
+      <div class="panel" id="p-assign">${as?`
+        <div class="assignment"><div class="assign-card">
+          <h3>${as.title||'Assignment'}</h3>
+          <div class="scenario">${as.scenario||''}</div>
+          <p style="margin-bottom:6px;color:var(--muted)">Your tasks:</p>
+          <ol>${(as.tasks||[]).map(t=>`<li>${t}</li>`).join('')}</ol>
+          <button class="ans-toggle" onclick="toggleAns(this)">Show answer key</button>
+          <div class="answers"><h4>✓ Answer Key</h4>${(as.answers||[]).map((a,i)=>`<div class="akey"><b>${i+1}.</b> ${a}</div>`).join('')}</div>
+        </div></div>`:'<p style="color:var(--muted)">No assignment yet.</p>'}
+      </div>`;
+    el.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+      el.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+      el.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+      t.classList.add('active');document.getElementById('p-'+t.dataset.p).classList.add('active');
+    });
+    if(fc.length)loadCard();
+  }
+
+  // flashcards
+  function loadCard(){const ch=SUBJECTS[CUR.subject].chapters[CUR.chapter];const fc=ch.flashcards;
+    document.getElementById('flashcard').classList.remove('flipped');
+    document.getElementById('fcFront').textContent=fc[CUR.card].front;
+    document.getElementById('fcBack').textContent=fc[CUR.card].back;
+    document.getElementById('fcNum').textContent=CUR.card+1;}
+  function flipCard(){document.getElementById('flashcard').classList.toggle('flipped');}
+  function nextCard(e){e.stopPropagation();const fc=SUBJECTS[CUR.subject].chapters[CUR.chapter].flashcards;CUR.card=(CUR.card+1)%fc.length;loadCard();}
+  function prevCard(e){e.stopPropagation();const fc=SUBJECTS[CUR.subject].chapters[CUR.chapter].flashcards;CUR.card=(CUR.card-1+fc.length)%fc.length;loadCard();}
+
+  // quiz
+  function answer(qi,oi,correct,el){
+    const opts=el.parentElement.querySelectorAll('.opt');
+    opts.forEach(o=>o.classList.add('disabled'));
+    if(oi===correct){el.classList.add('correct');}
+    else{el.classList.add('wrong');opts[correct].classList.add('correct');}
+    document.getElementById('ex-'+qi).classList.add('show');
+  }
+  function toggleAns(btn){const a=btn.nextElementSibling;a.classList.toggle('show');
+    btn.textContent=a.classList.contains('show')?'Hide answer key':'Show answer key';}
+
+  function flip(){} // legacy noop
+  setStats();
+</script>
+</body>
+</html>
