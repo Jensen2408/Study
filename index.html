@@ -6,9 +6,9 @@
 <title>StudyHub · Biology & Chemistry</title>
 <style>
   :root{
-    --bg:#0a1612;--bg2:#0d1f1a;--teal:#14b8a6;--teal-dark:#0d6e6e;
-    --teal-glow:rgba(20,184,166,.35);--mint:#5eead4;--text:#e6fffa;
-    --muted:#8fb3aa;--card:rgba(255,255,255,.04);--border:rgba(20,184,166,.18);
+    --bg:#180a14;--bg2:#1f0d18;--teal:#e879a0;--teal-dark:#9d174d;
+    --teal-glow:rgba(232,121,160,.35);--mint:#fbcfe8;--text:#fff0f6;
+    --muted:#c4869e;--card:rgba(255,255,255,.04);--border:rgba(232,121,160,.18);
     --good:#34d399;--bad:#f87171;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -17,16 +17,16 @@
 
   /* background */
   .bg-layer{position:fixed;inset:0;z-index:-2;overflow:hidden;background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(13,110,110,.45), transparent 60%),
-    radial-gradient(900px 500px at 0% 100%, rgba(20,184,166,.25), transparent 55%),
+    radial-gradient(1200px 600px at 80% -10%, rgba(157,23,77,.45), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(232,121,160,.25), transparent 55%),
     linear-gradient(160deg,var(--bg),var(--bg2))}
   .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;animation:float 18s ease-in-out infinite}
-  .blob.b1{width:420px;height:420px;background:radial-gradient(circle,#14b8a6,transparent 70%);top:-100px;left:-80px}
-  .blob.b2{width:380px;height:380px;background:radial-gradient(circle,#0d6e6e,transparent 70%);bottom:-120px;right:-60px;animation-delay:-6s}
-  .blob.b3{width:300px;height:300px;background:radial-gradient(circle,#22d3ee,transparent 70%);top:40%;left:55%;animation-delay:-12s;opacity:.3}
+  .blob.b1{width:420px;height:420px;background:radial-gradient(circle,#e879a0,transparent 70%);top:-100px;left:-80px}
+  .blob.b2{width:380px;height:380px;background:radial-gradient(circle,#9d174d,transparent 70%);bottom:-120px;right:-60px;animation-delay:-6s}
+  .blob.b3{width:300px;height:300px;background:radial-gradient(circle,#f472b6,transparent 70%);top:40%;left:55%;animation-delay:-12s;opacity:.3}
   @keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.1)}66%{transform:translate(-30px,40px) scale(.95)}}
   .particles{position:fixed;inset:0;z-index:-1;pointer-events:none}
-  .particle{position:absolute;background:var(--mint);border-radius:50%;opacity:.4;box-shadow:0 0 12px var(--teal-glow);animation:rise linear infinite}
+  .particle{position:absolute;background:#f9a8d4;border-radius:50%;opacity:.4;box-shadow:0 0 12px rgba(232,121,160,.4);animation:rise linear infinite}
   @keyframes rise{from{transform:translateY(100vh);opacity:0}10%{opacity:.6}90%{opacity:.6}to{transform:translateY(-10vh) translateX(40px);opacity:0}}
 
   nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:16px 7vw;backdrop-filter:blur(12px);background:rgba(10,22,18,.55);border-bottom:1px solid var(--border)}
