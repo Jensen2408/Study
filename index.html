@@ -125,9 +125,26 @@
   .panel.active{display:block}
 
   /* summary */
-  .summary-list{list-style:none;display:flex;flex-direction:column;gap:14px;max-width:760px}
-  .summary-list li{padding:18px 22px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:12px;line-height:1.6;color:var(--text)}
-  .summary-list li b{color:var(--mint)}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:0;max-width:780px}
+  .summary-list li{
+    padding:18px 0 18px 24px;
+    border-bottom:1px solid rgba(232,121,160,.1);
+    line-height:1.75;
+    color:var(--text);
+    position:relative;
+    font-size:.97rem;
+  }
+  .summary-list li:last-child{border-bottom:none}
+  .summary-list li::before{
+    content:'';
+    position:absolute;
+    left:0;top:24px;
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--teal);
+    box-shadow:0 0 10px var(--teal-glow);
+  }
+  .summary-list li b{color:var(--mint);font-weight:700}
 
   /* flashcards */
   .fc-wrap{max-width:560px;margin:0 auto}
